@@ -1,17 +1,24 @@
-html, body {
+body {
     margin: 0;
     height: 100%;
     background: black;
+    overflow: hidden;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* image behavior */
 img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+
+    /* fade-in setup */
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+/* animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
