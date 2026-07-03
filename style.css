@@ -22,3 +22,11 @@ img {
         opacity: 1;
     }
 }
+
+/* Remove default browser spacing */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  
